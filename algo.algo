@@ -1,0 +1,27 @@
+ALGORITHM lengtStr
+VAR
+    str: STRING
+    nbr_space:INTEGER := 1
+    nbr_vow: i : INTEGER :=0
+BEGIN
+    read(str)
+    write ("length", str.length)
+    FOR i FROM 0 TO str.length -2 STEP 1 
+    IF : (str[i]="") THEN
+     nbr_space:= nbr_space + 1;
+     END IF
+     SWITCH (str [i]) DO
+         case "a" : nbr_vow := nbr_vow + 1
+         case "A" : nbr_vow := nbr_vow + 1
+         case "e" : nbr_vow := nbr_vow + 1
+         case "E" : nbr_vow := nbr_vow + 1
+         case "i" : nbr_vow := nbr_vow + 1
+         case "I" : nbr_vow := nbr_vow + 1
+         case "o" : nbr_vow := nbr_vow + 1
+         case "O" : nbr_vow := nbr_vow + 1
+         case "u" : nbr_vow := nbr_vow + 1
+         case "U" : nbr_vow := nbr_vow + 1
+         case "y" : nbr_vow := nbr_vow + 1
+         case "Y" : nbr_vow := nbr_vow + 1
+     END_SWITCH
+END
